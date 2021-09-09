@@ -1,0 +1,119 @@
+* {
+    margin:0;  
+    padding:0; 
+    border:0; 
+    background:transparent; 
+    outline:none; 
+    text-decoration:none; 
+    font-family:inherit; 
+    box-sizing:border-box;
+}
+
+
+ol, 
+ul, 
+li {
+    list-style:none; 
+    display:block;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing:0;
+}
+
+
+a img {border: none;}
+
+
+button, 
+a{
+    cursor: pointer; 
+    color: inherit;
+}
+
+
+textarea{resize: none;}
+button,
+input,
+textarea,
+select{
+    appearance: none !important; 
+    border-radius: 0;
+}
+
+
+
+/* ----------  CSS RESET OVER -----------*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Antic Slab', serif;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#left-side {
+    flex-grow: 3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #82C295;
+}
+
+.right-side {
+    width: 0;
+    display: flex;
+    /* flex-grow: 0; */
+    flex-direction: column;
+    height: 100%;
+    background-color: #15692E;
+    opacity: 0;
+    transition: all 3s ease-in-out;
+    /* display: none; */
+}
+
+ label {
+    color: #024817;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    padding: 8px;
+}
+
+input {
+    color: #0f5806;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+} 
+
+ul {
+    background-color: #ffffff56;
+}
+
+span {
+    margin: 20px;
+    color: #82C295;
+}
+
+.visible {
+    width: auto;
+    opacity: 1;
+    flex-grow: 1;
+    /* display: flex; */
+}
+
+li {
+    margin-top: 10px; 
+    font-weight: 500;
+}
